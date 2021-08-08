@@ -123,7 +123,7 @@ def Whatsapp():
         hour= int(takeCommand())
         speak("time in minutes")
         min=int(takeCommand())
-        pywhatkit.sendwhatmsg("+919920463978",msg,hour,min)
+        pywhatkit.sendwhatmsg("your receivers mobile number",msg,hour,min)
         speak("Done sir!")
 
     elif 'home' in person:
@@ -134,7 +134,7 @@ def Whatsapp():
         hour= int(takeCommand())
         speak("time in minutes")
         min=int(takeCommand())
-        pywhatkit.sendwhatmsg("+917038146660",msg,hour,min)
+        pywhatkit.sendwhatmsg("",msg,hour,min)
         speak("Done sir!")
 
 
@@ -257,7 +257,7 @@ if __name__ == "__main__":
                     try:
                         speak("What should I say?")
                         content = takeCommand()
-                        to = "tushar.08j@gmail.com"    
+                        to = ""    
                         sendEmail(to, content)
                         speak("Email has been sent!")
                     except Exception as e:
